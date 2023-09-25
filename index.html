@@ -25,7 +25,7 @@
       <img src="images/house.png" alt="Very simple picture of a building"/>
 
       <nav>
-        <h3>Site menu</h3>
+        <h3>Menu</h3>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About us</a></li>
@@ -48,7 +48,7 @@
       </section>
 
       <section>
-        <h2 id=sumamry>Housing Construction Summary for Q1 2023</h2>
+        <h2 id=summary>Housing Construction Summary for Q1 2023</h2>
 
         <p>In Q1, there were: </p>
 
@@ -284,12 +284,103 @@
 
         <form>
           <fieldset>
+            <legend>Personal Information:</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+            <label for="ward">Ward: </label>
+            <select id="ward" name="ward" required>
+              <option value="">Please choose a ward</option>
+              <option value="ward1">Ward 1</option>
+              <option value="ward1">Ward 2</option>
+              <option value="ward1">Ward 3</option>
+              <option value="ward1">Ward 4</option>
+              <option value="ward1">Ward 5</option>
+              <option value="ward1">Ward 6</option>
+              <option value="ward1">Ward 7</option>
+              <option value="ward1">Ward 8</option>
+              <option value="ward1">Ward 9</option>
+              <option value="ward1">Ward 10</option>
+              <option value="ward1">Ward 11</option>
+              <option value="ward1">Ward 12</option>
+              <option value="ward1">Ward 13</option>
+              <option value="ward1">Ward 14</option>
+              <option value="ward1">Ward 15</option>
+              <option value="ward1">Ward 16</option>
+              <option value="ward1">Ward 17</option>
+              <option value="ward1">Ward 18</option>
+              <option value="ward1">Ward 19</option>
+              <option value="ward1">Ward 20</option>
+              <option value="ward1">Ward 21</option>
+              <option value="ward1">Ward 22</option>
+              <option value="ward1">Ward 23</option>
+              <option value="ward1">Ward 24</option>
+            </select>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Feedback:</legend>
+            <label for="subject">Subject/Topic:</label>
+            <input type="text" id="subject" name="subject" required>
 
+            <label>Feedback Type:</label>
+            <input type="radio" id="suggestion" name="suggestion" value="suggestion" required>
+            <label for="suggestion">Suggestion</label>
+            <input type="radio" id="concern" name="concern" value="concern">
+            <label for="concern">Concern</label>
+            <input type="radio" id="appreciation" name="appreciation" value="appreciation">
+            <label for="appreciation">Appreciation</label>
+            <label for="feedback">Feedback Details:</label>
+            <textarea id="feedback" name="feedback" cols="20" rows="5" required></textarea>
+            <label for="priority">Priority Level:</label>
+            <select id="priority" name="priority" required>
+              <option value="">Choose a priority</option>
+              <option value="low">low</option>
+              <option value="medium">medium</option>
+              <option value="high">high</option>
+              <option value="NOW!!!">NOW (BAD IDEA!!!)</option>
+            </select>
+            <label for="location">Location (if applicable):</label>
+            <input type="text" id="location" name="location">
+          </fieldset>
+
+          <fieldset>
+            <legend>Follow-up Information:</legend>
+            <input type="checkbox" id="followup" name="followup">
+            <label for="followup">I would like to receive a follow-up response.</label>
+            <label for="preferredcontact">Preferred Contact Method: </label>
+            <select id="preferredcontact" name="preferredcontact">
+              <option value="email">Email</option>
+              <option value="phone">Phone</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Submit Feedback:</legend>
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">I consent to the use of my feedback.</label>
+            <input type="submit" name="submit">
           </fieldset>
         </form>
-
       </section>
-
     </main>
+
+    <footer>
+      <h2>Site Footer</h2>
+      
+      <nav>
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <p>© 2023</p>
+    </footer>
   </body>
 </html>
